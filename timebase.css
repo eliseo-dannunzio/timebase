@@ -1,0 +1,101 @@
+	#beerContainer {
+		height: 800px;
+		width: 1200px;
+		position: relative;
+	}
+
+	#beerForm {
+		width: 600px;
+		height: 300px;
+		position: absolute;
+		padding: 5px;
+		border: 1px solid rgb(0,0,0);
+		font-family: Arial;
+
+	}
+
+	/* Set up marker default */
+	#beerList {
+		width: 570px;
+		height: 300px;
+		position: absolute;
+		display: none;
+		cursor: pointer;
+		border: 1px solid rgb(0,0,0);
+		top: 0;
+		left: 620px;
+		overflow-y: scroll;
+		font-family: Arial;
+		padding: 5px;
+	}
+
+	#beerList.show {
+		display: inline-block;
+	}
+
+	#beerList ul {
+		padding: 0;
+		list-style-type: none;
+	}
+
+	#beerList ul li {
+		display: inline-block;
+	}
+
+	#beerList ul li span:hover {
+		cursor: pointer;
+		background-color: rgb(255,215,0);
+	}
+
+	/* Information display, defaults to not show information unless a marker is clicked */
+	#beerInfo {
+		font-family: Arial;
+		display: none;
+		background-color: rgb(255,255,255);
+		width: 1190px;
+		height: 470px;
+		padding: 5px;
+		position: absolute;
+		border: 1px solid rgb(0,0,0);
+		top: 320px;
+		left: 0;
+	}
+
+	/* Displays the information when a marker is clicked */
+	#beerInfo.show {
+		display: inline-block !important;
+	}
+
+	#beerInfoImg {
+		width: 200px;
+		height: 415px;
+		float: left;
+		margin-right: 10px;
+	}
+
+	#beerInfoImg img {
+		display: block;
+		height: 415px;
+		margin: 0 auto;
+	}
+
+	#beerInfoDetails {
+		display: block;
+		width: 970px;
+		height: 415px;
+		float: left;
+	}
+
+	/* Information display's heading style */
+    .question, .heading {
+        font-weight: bold;
+    }
+
+	h1, h2 {
+		margin-top: 0;
+	}
+
+	/* Capitalizes the resulting value for each marker's data */
+    .capitalize {
+        text-transform: capitalize;
+    }
